@@ -53,7 +53,7 @@ SETUP_SOURCE_COMMAND="repo init -u https://github.com/RisingTechOSS/android -b t
 SYNC_SOURCE_COMMAND="repo sync -c -j$(nproc --all) --force-sync --no-clone-bundle --no-tags"
 
 # Optional: If you have any post command to run after syncing source
-# POST_SYNC_SOURCE_COMMAND="rm -rf .repo"
+POST_SYNC_SOURCE_COMMAND="rm -rf .repo"
 
 # Optional: If you have any pre command to run before building
 # PRE_BUILD_COMMAND=""
@@ -61,7 +61,7 @@ SYNC_SOURCE_COMMAND="repo sync -c -j$(nproc --all) --force-sync --no-clone-bundl
 # Required: Build command either for vanilla or gapps or both
 
 # Vanilla build command
-BUILD_VANILLA_COMMAND="source build/envsetup.sh && riseup vince vanilla userdebug && m bacon"
+BUILD_VANILLA_COMMAND="source build/envsetup.sh && riseup vince vanilla userdebug && rise b"
 
 # GApps build command
 BUILD_GAPPS_COMMAND=""
