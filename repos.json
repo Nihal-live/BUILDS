@@ -1,19 +1,24 @@
 {
     "repos": [
         {
-            "repo": "https://github.com/adnan-44/device_xiaomi_vince",
+            "repo": "https://github.com/anandhan07/android_device_xiaomi_vince",
             "dir": "device/xiaomi/vince",
-            "branch": "derp-12"
-        },
-        {
-            "repo": "https://github.com/LineageOS/android_kernel_xiaomi_msm8953",
-            "dir": "kernel/xiaomi/msm8953",
-            "branch": "lineage-20"
+            "branch": "spark-13.0"
         },
         {
             "repo": "https://github.com/anandhan07/android_vendor_xiaomi_vince",
             "dir": "vendor/xiaomi/vince",
-            "branch": "thirteen"
+            "branch": "spark-13.0"
+        },
+        {
+            "repo": "https://github.com/anandhan07/kernel_xiaomi_vince",
+            "dir": "kernel/xiaomi/vince",
+            "branch": "andro"
+        },
+        {
+            "repo": "https://github.com/LineageOS/android_hardware_xiaomi",
+            "dir": "hardware/xiaomi",
+            "branch": "lineage-20"
         }
     ]
 }
