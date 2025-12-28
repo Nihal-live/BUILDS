@@ -82,10 +82,14 @@ jobs:
           SF_PASS: ${{ secrets.SF_PASS }}
           GITHUB_RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
 
-      - name: Upload Artifact
-        uses: actions/upload-artifact@v3
+            - name: Upload Artifact
+        uses: actions/upload-artifact@v4
         if: always()
         with:
-          name: Logs
+          name: Build-Logs-${{ github.run_id }}
           path: |
             *.log
+            out/*.log
+            __rom-build_scripts__/*.log
+          retention-days: 3
+          compression-level: 9
